@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #16002f, #6d28d9, #c026d3);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+    }
+
+    nav h2 { font-size: 22px; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      opacity: .85;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      margin-bottom: 18px;
+    }
+
+    .hero span { color: #f0abfc; }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.7;
+      color: #eadcff;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 26px;
+      border-radius: 30px;
+      background: white;
+      color: #6d28d9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card {
+      margin: 0 auto 40px;
+      max-width: 850px;
+      padding: 25px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 18px;
+      background: rgba(255,255,255,.1);
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h2>Dev<span style="color:#f0abfc">.</span></h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="about">
+    <div>
+      <h1>Build. Create. <span>Innovate.</span></h1>
+      <p>
+        I'm a developer focused on creating clean, modern and
+        high-performance digital experiences.
+      </p>
+      <a class="btn" href="#work">View My Work</a>
+    </div>
+  </section>
+
+  <section class="card" id="work">
+    <h2>Featured Projects</h2>
+    <p>Web apps • UI/UX • APIs • Full-stack development</p>
+  </section>
+</body>
+</html>
+
